@@ -21,7 +21,7 @@
 
         while (choice < 1 || choice > 5);
         {
-                Console.WriteLine("Error! Please enter a number between 1 and 5!");
+                Console.WriteLine("A number must be between 1 and 5.");
         }
         if (choice == 1 || choice == 4)
         {
