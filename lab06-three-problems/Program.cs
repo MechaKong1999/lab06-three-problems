@@ -26,7 +26,7 @@
         if (choice == 1 || choice == 4)
         {
             Console.WriteLine("=== Exercise 1: The Grade Checker ===");
-            Console.Write("Please enter a grade number: ");
+            Console.Write("Score: ");
             int grade = Convert.ToInt32(Console.ReadLine());
 
         if (grade >= 90) {
@@ -77,6 +77,7 @@
                 else if (total == 7 || total == 11)
                     {
                         Console.WriteLine("A winner.");
+                        totalWin++;
                     }
                 else
                     {
@@ -92,6 +93,19 @@
             if (choice == 3 || choice == 4)
             {
                 Console.WriteLine("=== Exercise 3: The Score Report ===");
+
+                int[] grades = new int [5];
+
+                for (int i = 0; i < grades.Length; i++)
+                {
+                    grades[i] = -1;
+
+                    if (grades[i] < 0 || grades[i] > 100)
+                    {
+                        Console.WriteLine("Score: ");
+                    }
+                }
+                 
             }
         }
         while (choice == 5)
